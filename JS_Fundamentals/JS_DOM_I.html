@@ -1,0 +1,39 @@
+<html>
+<body>
+    <h1>Students</h1>
+    <ul id="main">
+        <!-- this is empty-->
+    </ul>
+    <div id="schedule">
+
+    </div>
+
+<script>
+    function appendList(array, id){
+        var list = document.getElementById(id);
+        for (var i=0; i<array.length; i++){
+            var item = document.createElement('li');
+            item.appendChild(document.createTextNode(array[i]));
+            list.appendChild(item);
+
+        }
+        return list;
+    };
+    // let students = ["Jeff", "Jenny", "Javier", "Joslyn", "Joe", "Jane", "Django"];
+    // let target_id = "main";
+    // appendList(students, target_id);
+
+    // function superAppend(arr, element, id){
+    //     var parent = document.getElementById(id);
+    //     for (var i=0; i<arr.length; i++){
+    //         var child = document.createElement(element);
+    //         child.innerHTML = arr[i];
+    //         parent.appendChild(child);
+    //     }
+    //     return parent;
+    // }
+    // let activities = ["Breakfast", "Hiking", "Swimming", "Fishing", "Lunch", "Arts & Crafts", "Django"];
+    // superAppend(activities, 'p', schedule);
+</script>   
+</body>
+</html>
