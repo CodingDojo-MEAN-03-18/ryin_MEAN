@@ -17,12 +17,12 @@ function Ninja(name){
         this.health += 10;
         console.log(this.health);
     }
-    this.punch = function(ninja){
-        if(ninja instanceof Ninja){
-            ninja.health -= 5;
-            console.log(ninja.name + " was punched by " + this.name + " and lost 5 health!");
-        }
-    }
+    // this.punch = function(ninja){
+    //     if(ninja instanceof Ninja){
+    //         ninja.health -= 5;
+    //         console.log(ninja.name + " was punched by " + this.name + " and lost 5 health!");
+    //     }
+    // }
     this.kick = function(ninja){
         if(ninja instanceof Ninja){
             let damage = strength*15
@@ -31,6 +31,14 @@ function Ninja(name){
         }
     }   
 }
+
+Ninja.prototype.punch = function(ninja){
+    if(ninja instanceof Ninja){
+        ninja.health -= 5;
+        console.log(ninja.name + " was punched by " + this.name + " and lost 5 health!");
+    }
+}
+
 
 const ninja1 = new Ninja("Goemon");
 const ninja2 = new Ninja("Bill Gates");
