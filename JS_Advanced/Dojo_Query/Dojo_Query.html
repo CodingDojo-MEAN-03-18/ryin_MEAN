@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dojo Query</title>
+        <meta charset="utf-8">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="Dojo_Query.js"></script>
+    </head>
+    <body>
+        <div id="wrapper" >
+            <button id="click">Click Me!</button>
+            <button id="hov">Hover Over Me!</button>
+        </div>
+    </body>
+    <script>
+        $Dojo("click").click(function() { console.log("The button was clicked!") });
+        $Dojo("hov").hover(function() { console.log("The button was hovered on!") });
+    </script>
+</html>
