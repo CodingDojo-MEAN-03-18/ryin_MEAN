@@ -1,0 +1,11 @@
+* {
+    font-family: sans-serif;
+}
+#wrapper {
+    width: 800px;
+    margin: 0px auto;
+    text-align: center;
+}
+#chop {
+    font-size: 100px;
+}
