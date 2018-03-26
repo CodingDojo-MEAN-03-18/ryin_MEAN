@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Counter</title>
+        <link rel="stylesheet" href="styles/style.css">
+    </head>
+    <body>
+        <div id="wrapper">
+            <h2>Counter</h2>
+            <h3><%= counter %></h3>
+
+            <form action="/two" method="get" class="button">
+                <input type="submit" value="+2">
+            </form>
+
+            <form action="/reset" method="get" class="button">
+                <input type="submit" value="reset">
+            </form>
+        </div>    
+    </body>
+</html>

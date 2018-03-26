@@ -1,0 +1,11 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#wrapper{
+    text-align: center;
+}
+
+.button{
+    padding: 10px;
+}
